@@ -113,7 +113,7 @@
               <goal>java</goal>
             </goals>
             <configuration>
-              <mainClass>sele.sele.Sample</mainClass> <!-- Replace with actual main class -->
+              <mainClass>sele.sele.Synchronization</mainClass> <!-- Replace with actual main class -->
             </configuration>
           </execution>
         </executions>
