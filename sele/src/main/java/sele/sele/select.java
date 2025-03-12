@@ -2,6 +2,8 @@
 package sele.sele;
 
 import java.time.Duration;
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -34,7 +36,7 @@ public class select {
 //        drp.selectByVisibleText("Puppeteer");
         
         
-        driver.get("https://selenium.dev/selenium/web/formPage.html");
+        driver.get("https://selenium.dev/selenium/web/ formPage.html");
         WebElement uiAuto = driver.findElement(By.cssSelector("#multi"));
       Select drp = new Select(uiAuto);
       drp.deselectByVisibleText("Sausages");
@@ -42,15 +44,25 @@ public class select {
       for (WebElement option : list) {
         System.out.println("The drop down options are: " + option.getText());
     }
-      drp.selectByVisibleText("Eggs");
-      drp.selectByIndex(3);
-      
-      List<WebElement> list1 = drp.getAllSelectedOptions();
-      for (WebElement option1 : list1) {
-          System.out.println("The drop down selected options are: " + option1.getText());
+      List<String> opt = new ArrayList<>();
+      for (WebElement option1 : list) {
+         opt.add(option1.getText());
       }
-      drp.deselectByVisibleText("Eggs");
-      drp.deselectAll();
+     
+      Collections.sort(opt);
+      for (String option2 : opt) {
+          System.out.println("After sorting: " + option2);
+      }
+//      drp.selectByVisibleText("Eggs");
+//      drp.selectByIndex(3);
+//      
+//      List<WebElement> list1 = drp.getAllSelectedOptions();
+//      for (WebElement option1 : list1) {
+//          System.out.println("The drop down selected options are: " + option1.getText());
+//      }
+//      drp.deselectByVisibleText("Eggs");
+//      drp.deselectAll();
+      
      // driver.quit();
    
         
