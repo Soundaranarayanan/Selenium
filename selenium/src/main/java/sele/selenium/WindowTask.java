@@ -31,13 +31,12 @@ public class WindowTask {
                 String text = driver.findElement(By.xpath("//b//a[contains(text(),\"What is Selenium?\")]")).getText();
                 System.out.println("Text in Window: " + text);
             } catch (Exception e) {
-                System.out.println("no text");
+                System.out.println("no text"); 
                 
             }
                 
         }
-
-        driver.switchTo().window(parent);
+    driver.switchTo().window(parent);
         System.out.println("Switched to Parent Window");
         String text1=driver.findElement(By.xpath("//a[contains(text(),\"Page One\")]")).getText();
         System.out.println(text1);
