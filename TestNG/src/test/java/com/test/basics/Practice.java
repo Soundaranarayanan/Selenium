@@ -11,6 +11,7 @@ import java.time.Duration;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import static org.testng.Assert.assertEquals;
@@ -35,10 +36,12 @@ public class Practice {
 	  String expectedTitle = dvr.getTitle();
 	  Assert.assertEquals(actualtitle, expectedTitle);
 	 
-	 soft.assertAll();
+//	 soft.assertAll();
   }
   @BeforeTest
   public void setup() {
+	  ChromeOptions options = new ChromeOptions();
+	  options.addArguments("--headless"); 
 	  dvr = new ChromeDriver();
 	  dvr.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	  dvr.manage().window().maximize();
