@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="methods" name="Failed suite [Parallel Test Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="3" parallel="methods" name="Bing Search Test(failed)">
+    <classes>
+      <class name="pack.TC2">
+        <methods>
+          <include name="search" invocation-numbers="2"/>
+          <include name="afterMethod"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- pack.TC2 -->
+    </classes>
+  </test> <!-- Bing Search Test(failed) -->
+</suite> <!-- Failed suite [Parallel Test Suite] -->

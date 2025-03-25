@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-03-25T19:07:11 IST" name="Default suite" finished-at="2025-03-25T19:07:29 IST" duration-ms="18800">
+    <groups>
+    </groups>
+    <test started-at="2025-03-25T19:07:11 IST" name="Default test" finished-at="2025-03-25T19:07:29 IST" duration-ms="18800">
+      <class name="pack.TC2">
+        <test-method is-config="true" signature="setup()[pri:0, instance:pack.TC2@206a70ef]" started-at="2025-03-25T19:07:11 IST" name="setup" finished-at="2025-03-25T19:07:15 IST" duration-ms="4641" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:pack.TC2@206a70ef]" started-at="2025-03-25T19:07:11 IST" name="setup" finished-at="2025-03-25T19:07:15 IST" duration-ms="4586" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:pack.TC2@206a70ef]" started-at="2025-03-25T19:07:11 IST" name="setup" finished-at="2025-03-25T19:07:15 IST" duration-ms="4613" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:pack.TC2@206a70ef]" started-at="2025-03-25T19:07:11 IST" name="setup" finished-at="2025-03-25T19:07:16 IST" duration-ms="4717" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="search(java.lang.String)[pri:0, instance:pack.TC2@206a70ef]" started-at="2025-03-25T19:07:15 IST" name="search" data-provider="searchData" finished-at="2025-03-25T19:07:29 IST" duration-ms="13433" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[java]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- search -->
+        <test-method signature="search(java.lang.String)[pri:0, instance:pack.TC2@206a70ef]" started-at="2025-03-25T19:07:15 IST" name="search" data-provider="searchData" finished-at="2025-03-25T19:07:27 IST" duration-ms="11240" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TestNG]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- search -->
+        <test-method signature="search(java.lang.String)[pri:0, instance:pack.TC2@206a70ef]" started-at="2025-03-25T19:07:15 IST" name="search" data-provider="searchData" finished-at="2025-03-25T19:07:29 IST" duration-ms="13508" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[python]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- search -->
+        <test-method signature="search(java.lang.String)[pri:0, instance:pack.TC2@206a70ef]" started-at="2025-03-25T19:07:16 IST" name="search" data-provider="searchData" finished-at="2025-03-25T19:07:29 IST" duration-ms="13107" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[selenium]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- search -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:pack.TC2@206a70ef]" started-at="2025-03-25T19:07:27 IST" name="afterMethod" finished-at="2025-03-25T19:07:27 IST" duration-ms="732" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:pack.TC2@206a70ef]" started-at="2025-03-25T19:07:29 IST" name="afterMethod" finished-at="2025-03-25T19:07:29 IST" duration-ms="862" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:pack.TC2@206a70ef]" started-at="2025-03-25T19:07:29 IST" name="afterMethod" finished-at="2025-03-25T19:07:29 IST" duration-ms="636" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:pack.TC2@206a70ef]" started-at="2025-03-25T19:07:29 IST" name="afterMethod" finished-at="2025-03-25T19:07:29 IST" duration-ms="556" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- pack.TC2 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
