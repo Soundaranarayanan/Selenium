@@ -1,0 +1,101 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>DataProvider</groupId>
+  <artifactId>DataProvider</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+
+  <dependencies>
+    <!-- Selenium Java -->
+    <dependency>
+        <groupId>org.seleniumhq.selenium</groupId>
+        <artifactId>selenium-java</artifactId>
+        <version>4.14.1</version>
+    </dependency>
+
+    <!-- Apache POI for Excel Handling -->
+    <dependency>
+        <groupId>org.apache.poi</groupId>
+        <artifactId>poi</artifactId>
+        <version>5.2.3</version>
+    </dependency>
+
+    <dependency>
+        <groupId>org.apache.poi</groupId>
+        <artifactId>poi-ooxml</artifactId>
+        <version>5.2.3</version>
+    </dependency>
+
+    <!-- Apache Commons Compress (Required for .xlsx file processing) -->
+    <dependency>
+        <groupId>org.apache.commons</groupId>
+        <artifactId>commons-compress</artifactId>
+        <version>1.23.0</version>
+    </dependency>
+
+    <!-- TestNG for DataProvider -->
+    <dependency>
+        <groupId>org.testng</groupId>
+        <artifactId>testng</artifactId>
+        <version>7.9.0</version>
+        <scope>test</scope>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+
+      <!-- Maven Compiler Plugin -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.1</version>
+        <configuration>
+          <source>11</source>  <!-- Use Java 11 or higher -->
+          <target>11</target>
+        </configuration>
+      </plugin>
+
+      <!-- Maven Surefire Plugin (For Running TestNG Tests) -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>3.0.0-M7</version>
+        <configuration>
+          <parallel>methods</parallel>  <!-- Enables parallel execution -->
+          <threadCount>3</threadCount>  <!-- Runs 3 tests in parallel -->
+          <suiteXmlFiles>
+            <suiteXmlFile>testng.xml</suiteXmlFile>
+          </suiteXmlFiles>
+        </configuration>
+      </plugin>
+
+      <!-- Maven Failsafe Plugin (For Integration Tests if Needed) -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-failsafe-plugin</artifactId>
+        <version>3.0.0-M7</version>
+        <executions>
+          <execution>
+            <goals>
+              <goal>integration-test</goal>
+              <goal>verify</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+
+      <!-- Extent Reports (Optional: Generates HTML reports for TestNG) -->
+      <plugin>
+        <groupId>com.aventstack</groupId>
+        <artifactId>extentreports</artifactId>
+        <version>5.1.1</version>
+      </plugin>
+
+    </plugins>
+  </build>
+
+</project>
