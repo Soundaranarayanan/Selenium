@@ -51,7 +51,12 @@
 </dependency>
 
 
-</dependencies>
+   	<dependency>
+   		<groupId>cucu</groupId>
+   		<artifactId>CucumberDemo</artifactId>
+   		<version>0.0.1-SNAPSHOT</version>
+   	</dependency>
+   </dependencies>
 <build>
     <plugins>
       <!-- Maven Compiler Plugin for Java 1.8 -->

@@ -5,7 +5,7 @@ Feature: Login Testing for OrangeHRM website
     Given The user is on the Login Page of OrangeHRM website
     When the user provides the valid username as "Admin" and password as "admin123"
     And the user clicks the login button
-    Then the user is able to vivsible the Dashboard text
+    Then the user is able to visible the Dashboard text
     
     
     @AssertQuickLaunch
